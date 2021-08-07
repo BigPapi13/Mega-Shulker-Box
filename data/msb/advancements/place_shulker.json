@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:furnace",
+                "item": {
+                    "nbt": "{msb.shulker:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "msb:place/init"
+    }
+}

@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:water[level=0] run data modify storage msb:block data.blocks.ids append value 32
+execute if block ~ ~ ~ minecraft:water[level=1] run data modify storage msb:block data.blocks.ids append value 33
+execute if block ~ ~ ~ minecraft:water[level=2] run data modify storage msb:block data.blocks.ids append value 34
+execute if block ~ ~ ~ minecraft:water[level=3] run data modify storage msb:block data.blocks.ids append value 35
+execute if block ~ ~ ~ minecraft:water[level=4] run data modify storage msb:block data.blocks.ids append value 36
+execute if block ~ ~ ~ minecraft:water[level=5] run data modify storage msb:block data.blocks.ids append value 37
+execute if block ~ ~ ~ minecraft:water[level=6] run data modify storage msb:block data.blocks.ids append value 38
+execute if block ~ ~ ~ minecraft:water[level=7] run data modify storage msb:block data.blocks.ids append value 39
+execute if block ~ ~ ~ minecraft:water[level=8] run data modify storage msb:block data.blocks.ids append value 40
+execute if block ~ ~ ~ minecraft:water[level=9] run data modify storage msb:block data.blocks.ids append value 41
+execute if block ~ ~ ~ minecraft:water[level=10] run data modify storage msb:block data.blocks.ids append value 42
+execute if block ~ ~ ~ minecraft:water[level=11] run data modify storage msb:block data.blocks.ids append value 43
+execute if block ~ ~ ~ minecraft:water[level=12] run data modify storage msb:block data.blocks.ids append value 44
+execute if block ~ ~ ~ minecraft:water[level=13] run data modify storage msb:block data.blocks.ids append value 45
+execute if block ~ ~ ~ minecraft:water[level=14] run data modify storage msb:block data.blocks.ids append value 46
+execute if block ~ ~ ~ minecraft:water[level=15] run data modify storage msb:block data.blocks.ids append value 47

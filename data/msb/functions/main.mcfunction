@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=msb.shulker] at @s unless block ~ ~ ~ minecraft:furnace{Items:[{Slot:0b,tag:{msb:{shulker:1b}}}]} run function msb:break/init

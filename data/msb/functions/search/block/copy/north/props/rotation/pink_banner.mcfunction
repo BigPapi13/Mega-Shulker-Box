@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=8] run data modify storage msb:block data.blocks.ids append value 3050
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=9] run data modify storage msb:block data.blocks.ids append value 3051
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=10] run data modify storage msb:block data.blocks.ids append value 3052
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=11] run data modify storage msb:block data.blocks.ids append value 3053
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=12] run data modify storage msb:block data.blocks.ids append value 3054
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=13] run data modify storage msb:block data.blocks.ids append value 3055
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=14] run data modify storage msb:block data.blocks.ids append value 3056
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=15] run data modify storage msb:block data.blocks.ids append value 3057
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=0] run data modify storage msb:block data.blocks.ids append value 3058
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=1] run data modify storage msb:block data.blocks.ids append value 3059
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=2] run data modify storage msb:block data.blocks.ids append value 3060
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=3] run data modify storage msb:block data.blocks.ids append value 3061
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=4] run data modify storage msb:block data.blocks.ids append value 3062
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=5] run data modify storage msb:block data.blocks.ids append value 3063
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=6] run data modify storage msb:block data.blocks.ids append value 3064
+execute if block ~ ~ ~ minecraft:pink_banner[rotation=7] run data modify storage msb:block data.blocks.ids append value 3065

@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=12] run data modify storage msb:block data.blocks.ids append value 2654
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=13] run data modify storage msb:block data.blocks.ids append value 2655
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=14] run data modify storage msb:block data.blocks.ids append value 2656
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=15] run data modify storage msb:block data.blocks.ids append value 2657
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=0] run data modify storage msb:block data.blocks.ids append value 2658
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=1] run data modify storage msb:block data.blocks.ids append value 2659
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=2] run data modify storage msb:block data.blocks.ids append value 2660
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=3] run data modify storage msb:block data.blocks.ids append value 2661
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=4] run data modify storage msb:block data.blocks.ids append value 2662
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=5] run data modify storage msb:block data.blocks.ids append value 2663
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=6] run data modify storage msb:block data.blocks.ids append value 2664
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=7] run data modify storage msb:block data.blocks.ids append value 2665
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=8] run data modify storage msb:block data.blocks.ids append value 2666
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=9] run data modify storage msb:block data.blocks.ids append value 2667
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=10] run data modify storage msb:block data.blocks.ids append value 2668
+execute if block ~ ~ ~ minecraft:wither_skeleton_skull[rotation=11] run data modify storage msb:block data.blocks.ids append value 2669

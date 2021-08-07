@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:sugar_cane[age=0] run data modify storage msb:block data.blocks.ids append value 295
+execute if block ~ ~ ~ minecraft:sugar_cane[age=1] run data modify storage msb:block data.blocks.ids append value 296
+execute if block ~ ~ ~ minecraft:sugar_cane[age=2] run data modify storage msb:block data.blocks.ids append value 297
+execute if block ~ ~ ~ minecraft:sugar_cane[age=3] run data modify storage msb:block data.blocks.ids append value 298
+execute if block ~ ~ ~ minecraft:sugar_cane[age=4] run data modify storage msb:block data.blocks.ids append value 299
+execute if block ~ ~ ~ minecraft:sugar_cane[age=5] run data modify storage msb:block data.blocks.ids append value 300
+execute if block ~ ~ ~ minecraft:sugar_cane[age=6] run data modify storage msb:block data.blocks.ids append value 301
+execute if block ~ ~ ~ minecraft:sugar_cane[age=7] run data modify storage msb:block data.blocks.ids append value 302
+execute if block ~ ~ ~ minecraft:sugar_cane[age=8] run data modify storage msb:block data.blocks.ids append value 303
+execute if block ~ ~ ~ minecraft:sugar_cane[age=9] run data modify storage msb:block data.blocks.ids append value 304
+execute if block ~ ~ ~ minecraft:sugar_cane[age=10] run data modify storage msb:block data.blocks.ids append value 305
+execute if block ~ ~ ~ minecraft:sugar_cane[age=11] run data modify storage msb:block data.blocks.ids append value 306
+execute if block ~ ~ ~ minecraft:sugar_cane[age=12] run data modify storage msb:block data.blocks.ids append value 307
+execute if block ~ ~ ~ minecraft:sugar_cane[age=13] run data modify storage msb:block data.blocks.ids append value 308
+execute if block ~ ~ ~ minecraft:sugar_cane[age=14] run data modify storage msb:block data.blocks.ids append value 309
+execute if block ~ ~ ~ minecraft:sugar_cane[age=15] run data modify storage msb:block data.blocks.ids append value 310

@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:lava[level=0] run data modify storage msb:block data.blocks.ids append value 48
+execute if block ~ ~ ~ minecraft:lava[level=1] run data modify storage msb:block data.blocks.ids append value 49
+execute if block ~ ~ ~ minecraft:lava[level=2] run data modify storage msb:block data.blocks.ids append value 50
+execute if block ~ ~ ~ minecraft:lava[level=3] run data modify storage msb:block data.blocks.ids append value 51
+execute if block ~ ~ ~ minecraft:lava[level=4] run data modify storage msb:block data.blocks.ids append value 52
+execute if block ~ ~ ~ minecraft:lava[level=5] run data modify storage msb:block data.blocks.ids append value 53
+execute if block ~ ~ ~ minecraft:lava[level=6] run data modify storage msb:block data.blocks.ids append value 54
+execute if block ~ ~ ~ minecraft:lava[level=7] run data modify storage msb:block data.blocks.ids append value 55
+execute if block ~ ~ ~ minecraft:lava[level=8] run data modify storage msb:block data.blocks.ids append value 56
+execute if block ~ ~ ~ minecraft:lava[level=9] run data modify storage msb:block data.blocks.ids append value 57
+execute if block ~ ~ ~ minecraft:lava[level=10] run data modify storage msb:block data.blocks.ids append value 58
+execute if block ~ ~ ~ minecraft:lava[level=11] run data modify storage msb:block data.blocks.ids append value 59
+execute if block ~ ~ ~ minecraft:lava[level=12] run data modify storage msb:block data.blocks.ids append value 60
+execute if block ~ ~ ~ minecraft:lava[level=13] run data modify storage msb:block data.blocks.ids append value 61
+execute if block ~ ~ ~ minecraft:lava[level=14] run data modify storage msb:block data.blocks.ids append value 62
+execute if block ~ ~ ~ minecraft:lava[level=15] run data modify storage msb:block data.blocks.ids append value 63

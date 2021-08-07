@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=12] run data modify storage msb:block data.blocks.ids append value 3114
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=13] run data modify storage msb:block data.blocks.ids append value 3115
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=14] run data modify storage msb:block data.blocks.ids append value 3116
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=15] run data modify storage msb:block data.blocks.ids append value 3117
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=0] run data modify storage msb:block data.blocks.ids append value 3118
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=1] run data modify storage msb:block data.blocks.ids append value 3119
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=2] run data modify storage msb:block data.blocks.ids append value 3120
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=3] run data modify storage msb:block data.blocks.ids append value 3121
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=4] run data modify storage msb:block data.blocks.ids append value 3122
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=5] run data modify storage msb:block data.blocks.ids append value 3123
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=6] run data modify storage msb:block data.blocks.ids append value 3124
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=7] run data modify storage msb:block data.blocks.ids append value 3125
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=8] run data modify storage msb:block data.blocks.ids append value 3126
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=9] run data modify storage msb:block data.blocks.ids append value 3127
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=10] run data modify storage msb:block data.blocks.ids append value 3128
+execute if block ~ ~ ~ minecraft:purple_banner[rotation=11] run data modify storage msb:block data.blocks.ids append value 3129
