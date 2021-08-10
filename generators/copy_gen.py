@@ -1,5 +1,3 @@
-###ADD DISTANCE TO REMOVED STATES###
-
 import json
 import os
 import copy
@@ -13,22 +11,15 @@ blocks_backup = copy.deepcopy(blocks)
 
 path = os.getcwd()
 
-os.mkdir(path + "/south")
-os.mkdir(path + "/south/l0")
-os.mkdir(path + "/south/props")
 
-os.mkdir(path + "/west")
-os.mkdir(path + "/west/l0")
-os.mkdir(path + "/west/props")
+os.mkdir(path + "/dir")
+os.mkdir(path + "/dir/l0")
+os.mkdir(path + "/dir/props")
 
 
-os.mkdir(path + "/north")
-os.mkdir(path + "/north/l0")
-os.mkdir(path + "/north/props")
-
-os.mkdir(path + "/east")
-os.mkdir(path + "/east/l0")
-os.mkdir(path + "/east/props")
+os.mkdir(path + "/nodir")
+os.mkdir(path + "/nodir/l0")
+os.mkdir(path + "/nodir/props")
 
 def rotate_right(command):
   command = command.replace("south","sssss").replace("west","wwwww").replace("north","nnnnn").replace("east","eeeee").replace("sssss","west").replace("wwwww","north").replace("nnnnn","east").replace("eeeee","south")
@@ -47,28 +38,62 @@ def rotate_left(command):
   command = command.replace("axis=x","axisx").replace("axis=z","axisz").replace("axisx","axis=z").replace("axisz","axis=x")
   return(command)
 
+def generate_states(block):
+  global blocks_backup
+  state_import = [{}]
+  properties = blocks_backup[block]["properties"]
+  for prop in properties:
+    new_state_import = []
+    for base_state in state_import:
+      for value in properties[prop]:
+        base_state.update({prop:value})
+        new_state_import.append(base_state.copy())
+    state_import = new_state_import
+  final_state_import = []
+  for b in state_import:
+    final_state_import.append({"properties":b})
+  return(final_state_import)
+
 def write_props(properties, block_name, direction):
   global id
   global x
   global blocks
-  properties = sorted(properties.keys(), reverse = True)
+  global nodir_id_count
+  properties = sorted(properties.keys(), reverse = False)
   block_name = block_name.replace("minecraft:", "")
 
   file.write("execute if block ~ ~ ~ minecraft:" + block_name + " run function msb:search/block/copy/" + direction + "/props/" + properties[0] + "/" + block_name + "\n")
-  suffixes = [""]
+  suffixes = []
   final_prop = properties.pop(-1)
+  if len(properties) == 0:
+    suffixes = [""]
   #Setup for first layer
-  #if len(properties) != 0:
-    #for suf_num, value in enumerate(blocks[x]["properties"][properties[0]]):
-      #suffixes.append("_" + str(suf_num))
-    #properties.pop(0)
-
+  if len(properties) != 0:
+    if os.path.isdir(path + "/" + direction + "/props/" + properties[0]) == False:
+      os.mkdir(path + "/" + direction + "/props/" + properties[0])
+    prop_file = open(direction + "/props/" + properties[0] + "/" + block_name + ".mcfunction", "w")
+    for suf_num, value in enumerate(blocks[x]["properties"][properties[0]]):
+      text_first_half = "execute if block ~ ~ ~ minecraft:" + block_name + "[" + properties[0] + "=" + str(value)
+      if direction == "west":
+        text_first_half = rotate_right(text_first_half)
+      if direction == "north":
+        text_first_half = rotate_reverse(text_first_half)
+      if direction == "east":
+        text_first_half = rotate_left(text_first_half)
+      if len(properties) > 1:
+        prop_file.write(text_first_half + "] run function msb:search/block/copy/" + direction + "/props/" + properties[1] + "/" + block_name + "_" + str(suf_num) + "\n")            
+      else:
+        prop_file.write(text_first_half + "] run function msb:search/block/copy/" + direction + "/props/" + final_prop + "/" + block_name + "_" + str(suf_num) + "\n")
+      suffixes.append("_" + str(suf_num))
+    properties.pop(0)
+    prop_file.close()
 
   new_suffixes = suffixes
 
   #Any layers before last
   if len(properties) != 0:
     for ind, prop in enumerate(properties):
+      #print(new_suffixes)
       suffixes = new_suffixes
       new_suffixes = []
       for suffix in suffixes:
@@ -76,41 +101,42 @@ def write_props(properties, block_name, direction):
           os.mkdir(path + "/" + direction + "/props/" + prop)
         prop_file = open(direction + "/props/" + prop + "/" + block_name + suffix + ".mcfunction", "w")
         for num, value in enumerate(blocks[x]["properties"][prop]):
-          if num != len(properties) - 1:
-            prop_file_txt = ("execute if block ~ ~ ~ minecraft:" + block_name + "[" + prop + "=" + str(value) + "] run function msb:search/block/copy/" + direction + "/props/" + properties[ind + 1] + "/" + block_name + suffix + "\n")            
-          else:
-            prop_file_txt = ("execute if block ~ ~ ~ minecraft:" + block_name + "[" + prop + "=" + str(value) + "] run function msb:search/block/copy/" + direction + "/props/" + final_prop + "/" + block_name + suffix + "\n")
-          if direction == "south":
-            prop_file.write(prop_file_txt)
+          text_first_half = "execute if block ~ ~ ~ minecraft:" + block_name + "[" + prop + "=" + str(value)
           if direction == "west":
-            prop_file.write(rotate_right(prop_file_txt))
+            text_first_half = rotate_right(text_first_half)
           if direction == "north":
-            prop_file.write(rotate_reverse(prop_file_txt))
+            text_first_half = rotate_reverse(text_first_half)
           if direction == "east":
-            prop_file.write(rotate_left(prop_file_txt))
+            text_first_half = rotate_left(text_first_half)
+          if ind != len(properties) - 1:
+            prop_file.write(text_first_half + "] run function msb:search/block/copy/" + direction + "/props/" + properties[ind + 1] + "/" + block_name + suffix + "_" + str(num) + "\n")            
+          else:
+            prop_file.write(text_first_half + "] run function msb:search/block/copy/" + direction + "/props/" + final_prop + "/" + block_name + suffix + "_" + str(num)  + "\n")
+
           new_suffixes.append(suffix + "_" + str(num))
         prop_file.close()
   
-  if len(properties) == 0:
-    new_suffixes = [""]
+  #if len(properties) == 0:
+   #new_suffixes = [""]
 
   if os.path.isdir(path + "/" + direction + "/props/" + final_prop) == False:
     os.mkdir(path + "/" + direction + "/props/" + final_prop)
-
+  #Final layer
   suffixes = new_suffixes
   for suffix in suffixes:
     prop_file = open(direction + "/props/" + final_prop + "/" + block_name + suffix + ".mcfunction", "w")
     for value in blocks[x]["properties"][final_prop]:
-      prop_file_txt = ("execute if block ~ ~ ~ minecraft:" + block_name + "[" + final_prop + "=" + str(value) + "] run data modify storage msb:block data.blocks.ids append value " + str(id) + "\n")
-      if direction == "south":
-        prop_file.write(prop_file_txt)
+      text_first_half = "execute if block ~ ~ ~ minecraft:" + block_name + "[" + final_prop + "=" + str(value)
       if direction == "west":
-        prop_file.write(rotate_right(prop_file_txt))
+        text_first_half = rotate_right(text_first_half)
       if direction == "north":
-        prop_file.write(rotate_reverse(prop_file_txt))
+        text_first_half = rotate_reverse(text_first_half)
       if direction == "east":
-        prop_file.write(rotate_left(prop_file_txt))
-
+        text_first_half = rotate_left(text_first_half)
+      if direction == "dir":
+        prop_file.write(text_first_half + "] run data modify storage msb:block data.blocks.ids append value " + str(id + nodir_id_count) + "\n")
+      if direction == "nodir":
+        prop_file.write(text_first_half + "] run data modify storage msb:block data.blocks.ids append value " + str(id) + "\n")
       id += 1
     
 
@@ -164,7 +190,7 @@ remove_sides = [
   "minecraft:black_stained_glass_pane"
 ]
 
-removed_states = ['powered','triggered','occupied','extended','instrument','power','lit','distance']
+removed_states = ['powered','triggered','occupied','extended','instrument','power','snowy','distance']
 remove_all_states = ['minecraft:fire','minecraft:redstone_wire']
   
 #Modify blocks storage to get rid of unnecesary blockstates (Powered, directions on fences, etc.)
@@ -188,6 +214,39 @@ for current_block in blocks_backup.keys():
         if prop == 'shape' and "stairs" in current_block:
           del(blocks[current_block]['properties'][prop])
 
+        if prop == 'lit' and current_block == 'minecraft:redstone_torch':
+          del(blocks[current_block]['properties'][prop])
+
+blocks_backup = copy.deepcopy(blocks)
+blocks = {}
+
+#This process both rearranges the properties into a more usable order, but also filters the directinoal from the non-directional
+for current_block in blocks_backup.keys():
+  blocks.update({current_block:{}})
+  if "properties" in blocks_backup[current_block]:
+    blocks[current_block].update({"properties":blocks_backup[current_block]["properties"]})
+    blocks[current_block].update({"states":[]})
+    blocks[current_block]["states"] = generate_states(current_block)
+
+blocks_backup = copy.deepcopy(blocks)
+blocks = {}
+blocks_nodir = {}
+
+dir_id_count = 0
+nodir_id_count = 0
+
+for current_block in blocks_backup.keys():
+  if "north" in str(blocks_backup[current_block]) or "axis" in str(blocks_backup[current_block]) or "rotation" in str(blocks_backup[current_block]):
+    blocks.update({current_block:blocks_backup[current_block]})
+    dir_id_count += len(blocks_backup[current_block]["states"])
+  else:
+    if "properties" in blocks_backup[current_block]:
+      blocks_nodir.update({current_block:blocks_backup[current_block]})
+      nodir_id_count += len(blocks_backup[current_block]["states"])
+    else:
+      blocks_nodir.update({current_block:{}})
+      nodir_id_count += 1
+
 #####SOUTH#####
 
 file_cache = []
@@ -198,8 +257,8 @@ for block_num, x in enumerate(blocks):
   #print(x)
   if ('properties' not in blocks[x]) or (len(blocks[x]["properties"]) == 0):
     if (even_tracker % 2) == 0 and block_num != len(blocks) - 1:
-      file = open("south/l0/" + str(file_no) + ".mcfunction", "w")
-    file.write("execute if block ~ ~ ~ " + x + " run data modify storage msb:block data.blocks.ids append value " + str(id) + "\n")
+      file = open("dir/l0/" + str(file_no) + ".mcfunction", "w")
+    file.write("execute if block ~ ~ ~ " + x + " run data modify storage msb:block data.blocks.ids append value " + str(id + nodir_id_count) + "\n")
 
     if (even_tracker % 2) == 1 and block_num != len(blocks) - 2 or block_num == len(blocks) - 1:
       file.close()
@@ -209,10 +268,10 @@ for block_num, x in enumerate(blocks):
     id += 1
   else:
     if (even_tracker % 2) == 0 and block_num != len(blocks) - 1:
-      file = open("south/l0/" + str(file_no) + ".mcfunction", "w")
+      file = open("dir/l0/" + str(file_no) + ".mcfunction", "w")
 
     #file.write("execute if block ~ ~ ~ " + x + " run function msb:search/block/copy/south/props/" + )
-    write_props(blocks[x]["properties"], x, "south")
+    write_props(blocks[x]["properties"], x, "dir")
 
     if (even_tracker % 2) == 1 and block_num != len(blocks) - 2 or block_num == len(blocks) - 1:
       file.close()
@@ -229,7 +288,7 @@ file_count = int((file_no + 1) / 2)
 while file_count > 1:
   file_count = int((file_no + 1) / 2)
   new_cache = []
-  os.mkdir(path + "/south/l" + str(lvl))
+  os.mkdir(path + "/dir/l" + str(lvl))
   file_count = int((file_no + 1)/ 2)
   file_no = 0
   even_tracker = 0
@@ -237,8 +296,9 @@ while file_count > 1:
 
   for index, i in enumerate(file_cache):
     if (even_tracker % 2) == 0 and index != len(file_cache) - 1:
-      file = open("south/l" + str(lvl) + "/" + str(file_no) + ".mcfunction", "w")
-    file.write("execute if block ~ ~ ~ #msb:l" + str(lvl - 1) + "/" + str(tag_no) + " run function msb:search/block/copy/south/l" + str(lvl-1) + "/" + str(i["file_no"]) + "\n")
+      file = open("dir/l" + str(lvl) + "/" + str(file_no) + ".mcfunction", "w")
+    if file.closed == False:
+      file.write("execute if block ~ ~ ~ #msb:dir/l" + str(lvl - 1) + "/" + str(tag_no) + " run function msb:search/block/copy/dir/l" + str(lvl-1) + "/" + str(i["file_no"]) + "\n")
     if (even_tracker % 2) == 1 and index != len(file_cache) - 2 or index == len(file_cache) - 1:
       file.close()
       temp_cache.update({"file_no":file_no})
@@ -251,6 +311,77 @@ while file_count > 1:
     file_count = 0
   file_cache = new_cache
 
+###NON-DIRECTIONAL###
+
+blocks = copy.deepcopy(blocks_nodir)
+
+file_cache = []
+temp_cache = {}
+even_tracker = 0
+
+id = 0
+file_no = 0
+
+for block_num, x in enumerate(blocks):
+  #print(x)
+  if ('properties' not in blocks[x]) or (len(blocks[x]["properties"]) == 0):
+    if (even_tracker % 2) == 0 and block_num != len(blocks) - 1:
+      file = open("nodir/l0/" + str(file_no) + ".mcfunction", "w")
+    if file.closed == False:
+      file.write("execute if block ~ ~ ~ " + x + " run data modify storage msb:block data.blocks.ids append value " + str(id) + "\n")
+
+    if (even_tracker % 2) == 1 and block_num != len(blocks) - 2 or block_num == len(blocks) - 1:
+      file.close()
+      temp_cache.update({"file_no":file_no})
+      file_cache.append(temp_cache.copy())
+      file_no += 1
+    id += 1
+  else:
+    if (even_tracker % 2) == 0 and block_num != len(blocks) - 1:
+      file = open("nodir/l0/" + str(file_no) + ".mcfunction", "w")
+
+    #file.write("execute if block ~ ~ ~ " + x + " run function msb:search/block/copy/south/props/" + )
+    write_props(blocks[x]["properties"], x, "nodir")
+
+    if (even_tracker % 2) == 1 and block_num != len(blocks) - 2 or block_num == len(blocks) - 1:
+      file.close()
+      temp_cache.update({"file_no":file_no})
+      file_cache.append(temp_cache.copy())
+      file_no += 1
+  even_tracker += 1
+
+
+lvl = 1
+
+file_count = int((file_no + 1) / 2)
+
+while file_count > 1:
+  file_count = int((file_no + 1) / 2)
+  new_cache = []
+  os.mkdir(path + "/nodir/l" + str(lvl))
+  file_count = int((file_no + 1)/ 2)
+  file_no = 0
+  even_tracker = 0
+  tag_no = 0
+
+  for index, i in enumerate(file_cache):
+    if (even_tracker % 2) == 0 and index != len(file_cache) - 1:
+      file = open("nodir/l" + str(lvl) + "/" + str(file_no) + ".mcfunction", "w")
+    if file.closed == False:
+      file.write("execute if block ~ ~ ~ #msb:no_dir/l" + str(lvl - 1) + "/" + str(tag_no) + " run function msb:search/block/copy/nodir/l" + str(lvl-1) + "/" + str(i["file_no"]) + "\n")
+    if (even_tracker % 2) == 1 and index != len(file_cache) - 2 or index == len(file_cache) - 1:
+      file.close()
+      temp_cache.update({"file_no":file_no})
+      new_cache.append(temp_cache.copy())
+      file_no += 1
+    even_tracker += 1
+    tag_no += 1
+  lvl += 1
+  if lvl > 35:
+    file_count = 0
+  file_cache = new_cache
+
+'''
 #####WEST#####
 
 file_cache = []
@@ -449,4 +580,4 @@ while file_count > 1:
     file_count = 0
   file_cache = new_cache
 
-
+'''
