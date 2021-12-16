@@ -18,10 +18,15 @@ scoreboard players operation shift_x msb.vol = x msb.vol
 scoreboard players operation shift_y msb.vol = y msb.vol
 scoreboard players operation shift_z msb.vol = z msb.vol
 
-execute if score temp msb.rotation matches 0 at @s run function msb:place/loops/paste/south/up
-execute if score temp msb.rotation matches 1 at @s run function msb:place/loops/paste/west/up
-execute if score temp msb.rotation matches 2 at @s run function msb:place/loops/paste/north/up
-execute if score temp msb.rotation matches 3 at @s run function msb:place/loops/paste/east/up
+execute store result score prev msb.rotation run data get storage msb:block data.prev_rotation
+scoreboard players operation adjusted msb.rotation = temp msb.rotation
+scoreboard players operation adjusted msb.rotation -= prev msb.rotation
+scoreboard players operation adjusted msb.rotation %= #4 msb.const
+
+execute if score temp msb.rotation matches 0 at @s run function msb:place/loops/paste/south/block_rotation
+execute if score temp msb.rotation matches 1 at @s run function msb:place/loops/paste/west/block_rotation
+execute if score temp msb.rotation matches 2 at @s run function msb:place/loops/paste/north/block_rotation
+execute if score temp msb.rotation matches 3 at @s run function msb:place/loops/paste/east/block_rotation
 
 #Paste mobs, if there are any
 execute if data storage msb:block data.entities.ids[0] run function msb:place/entities/paste

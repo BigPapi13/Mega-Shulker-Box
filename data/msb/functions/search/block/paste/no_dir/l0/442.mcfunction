@@ -1,2 +1,2 @@
-execute if score id msb.id matches 884 run setblock ~ ~ ~ minecraft:mossy_stone_brick_slab[type=double,waterlogged=false]
-execute if score id msb.id matches 885 run setblock ~ ~ ~ minecraft:polished_diorite_slab[type=top,waterlogged=true]
+execute if score id msb.id matches 884 run setblock ~ ~ ~ minecraft:stone_brick_wall[waterlogged=false]
+execute if score id msb.id matches 885 run setblock ~ ~ ~ minecraft:nether_brick_wall[waterlogged=true]

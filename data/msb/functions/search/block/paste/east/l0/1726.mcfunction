@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4610 run setblock ~ ~ ~ minecraft:bee_nest[facing=north,honey_level=2]
-execute if score id msb.id matches 4611 run setblock ~ ~ ~ minecraft:bee_nest[facing=north,honey_level=3]
+execute if score id msb.id matches 4510 run setblock ~ ~ ~ minecraft:bee_nest[facing=north,honey_level=2]
+execute if score id msb.id matches 4511 run setblock ~ ~ ~ minecraft:bee_nest[facing=north,honey_level=3]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1514 run setblock ~ ~ ~ minecraft:spruce_sign[rotation=15,waterlogged=true]
-execute if score id msb.id matches 1515 run setblock ~ ~ ~ minecraft:spruce_sign[rotation=15,waterlogged=false]
+execute if score id msb.id matches 1414 run setblock ~ ~ ~ minecraft:spruce_sign[rotation=15,waterlogged=true]
+execute if score id msb.id matches 1415 run setblock ~ ~ ~ minecraft:spruce_sign[rotation=15,waterlogged=false]

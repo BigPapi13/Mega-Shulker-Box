@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:cactus[age=0] run data modify storage msb:block data.blocks.ids append value 206
+execute if block ~ ~ ~ minecraft:cactus[age=1] run data modify storage msb:block data.blocks.ids append value 207
+execute if block ~ ~ ~ minecraft:cactus[age=2] run data modify storage msb:block data.blocks.ids append value 208
+execute if block ~ ~ ~ minecraft:cactus[age=3] run data modify storage msb:block data.blocks.ids append value 209
+execute if block ~ ~ ~ minecraft:cactus[age=4] run data modify storage msb:block data.blocks.ids append value 210
+execute if block ~ ~ ~ minecraft:cactus[age=5] run data modify storage msb:block data.blocks.ids append value 211
+execute if block ~ ~ ~ minecraft:cactus[age=6] run data modify storage msb:block data.blocks.ids append value 212
+execute if block ~ ~ ~ minecraft:cactus[age=7] run data modify storage msb:block data.blocks.ids append value 213
+execute if block ~ ~ ~ minecraft:cactus[age=8] run data modify storage msb:block data.blocks.ids append value 214
+execute if block ~ ~ ~ minecraft:cactus[age=9] run data modify storage msb:block data.blocks.ids append value 215
+execute if block ~ ~ ~ minecraft:cactus[age=10] run data modify storage msb:block data.blocks.ids append value 216
+execute if block ~ ~ ~ minecraft:cactus[age=11] run data modify storage msb:block data.blocks.ids append value 217
+execute if block ~ ~ ~ minecraft:cactus[age=12] run data modify storage msb:block data.blocks.ids append value 218
+execute if block ~ ~ ~ minecraft:cactus[age=13] run data modify storage msb:block data.blocks.ids append value 219
+execute if block ~ ~ ~ minecraft:cactus[age=14] run data modify storage msb:block data.blocks.ids append value 220
+execute if block ~ ~ ~ minecraft:cactus[age=15] run data modify storage msb:block data.blocks.ids append value 221

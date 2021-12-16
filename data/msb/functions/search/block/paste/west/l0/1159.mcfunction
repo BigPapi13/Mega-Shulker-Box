@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3476 run setblock ~ ~ ~ minecraft:acacia_door[facing=west,half=upper,hinge=right,open=true]
-execute if score id msb.id matches 3477 run setblock ~ ~ ~ minecraft:acacia_door[facing=west,half=upper,hinge=right,open=false]
+execute if score id msb.id matches 3376 run setblock ~ ~ ~ minecraft:acacia_door[facing=west,half=upper,hinge=right,open=true]
+execute if score id msb.id matches 3377 run setblock ~ ~ ~ minecraft:acacia_door[facing=west,half=upper,hinge=right,open=false]

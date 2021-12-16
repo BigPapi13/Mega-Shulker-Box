@@ -1,2 +1,2 @@
-execute if score id msb.id matches 150 run setblock ~ ~ ~ minecraft:dark_oak_leaves[distance=5,persistent=false]
-execute if score id msb.id matches 151 run setblock ~ ~ ~ minecraft:dark_oak_leaves[distance=6,persistent=true]
+execute if score id msb.id matches 150 run setblock ~ ~ ~ minecraft:wither_rose
+execute if score id msb.id matches 151 run setblock ~ ~ ~ minecraft:lily_of_the_valley

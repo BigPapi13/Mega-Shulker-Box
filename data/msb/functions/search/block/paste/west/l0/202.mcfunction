@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1562 run setblock ~ ~ ~ minecraft:birch_sign[rotation=15,waterlogged=true]
-execute if score id msb.id matches 1563 run setblock ~ ~ ~ minecraft:birch_sign[rotation=15,waterlogged=false]
+execute if score id msb.id matches 1462 run setblock ~ ~ ~ minecraft:birch_sign[rotation=15,waterlogged=true]
+execute if score id msb.id matches 1463 run setblock ~ ~ ~ minecraft:birch_sign[rotation=15,waterlogged=false]

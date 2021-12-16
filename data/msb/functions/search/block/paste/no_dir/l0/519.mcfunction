@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1038 run setblock ~ ~ ~ minecraft:weeping_vines[age=18]
-execute if score id msb.id matches 1039 run setblock ~ ~ ~ minecraft:weeping_vines[age=19]
+execute if score id msb.id matches 1038 run setblock ~ ~ ~ minecraft:polished_blackstone_brick_slab[type=top,waterlogged=false]
+execute if score id msb.id matches 1039 run setblock ~ ~ ~ minecraft:polished_blackstone_brick_slab[type=bottom,waterlogged=true]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3382 run setblock ~ ~ ~ minecraft:spruce_door[facing=west,half=lower,hinge=left,open=true]
-execute if score id msb.id matches 3383 run setblock ~ ~ ~ minecraft:spruce_door[facing=west,half=lower,hinge=left,open=false]
+execute if score id msb.id matches 3282 run setblock ~ ~ ~ minecraft:spruce_door[facing=west,half=lower,hinge=left,open=true]
+execute if score id msb.id matches 3283 run setblock ~ ~ ~ minecraft:spruce_door[facing=west,half=lower,hinge=left,open=false]

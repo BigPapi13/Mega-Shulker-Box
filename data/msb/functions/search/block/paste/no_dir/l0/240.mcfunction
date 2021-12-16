@@ -1,2 +1,2 @@
-execute if score id msb.id matches 480 run setblock ~ ~ ~ minecraft:magenta_stained_glass_pane[waterlogged=true]
-execute if score id msb.id matches 481 run setblock ~ ~ ~ minecraft:magenta_stained_glass_pane[waterlogged=false]
+execute if score id msb.id matches 480 run setblock ~ ~ ~ minecraft:sunflower[half=lower]
+execute if score id msb.id matches 481 run setblock ~ ~ ~ minecraft:lilac[half=upper]

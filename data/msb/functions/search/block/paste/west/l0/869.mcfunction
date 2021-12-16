@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2896 run setblock ~ ~ ~ minecraft:iron_trapdoor[facing=south,half=top,open=true,waterlogged=false]
-execute if score id msb.id matches 2897 run setblock ~ ~ ~ minecraft:iron_trapdoor[facing=south,half=top,open=false,waterlogged=true]
+execute if score id msb.id matches 2796 run setblock ~ ~ ~ minecraft:iron_trapdoor[facing=south,half=top,open=true,waterlogged=false]
+execute if score id msb.id matches 2797 run setblock ~ ~ ~ minecraft:iron_trapdoor[facing=south,half=top,open=false,waterlogged=true]

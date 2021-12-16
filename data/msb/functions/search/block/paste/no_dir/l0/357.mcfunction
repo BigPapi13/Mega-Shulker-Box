@@ -1,2 +1,2 @@
-execute if score id msb.id matches 714 run setblock ~ ~ ~ minecraft:red_nether_bricks
-execute if score id msb.id matches 715 run setblock ~ ~ ~ minecraft:structure_void
+execute if score id msb.id matches 714 run setblock ~ ~ ~ minecraft:turtle_egg[eggs=4,hatch=1]
+execute if score id msb.id matches 715 run setblock ~ ~ ~ minecraft:turtle_egg[eggs=4,hatch=2]

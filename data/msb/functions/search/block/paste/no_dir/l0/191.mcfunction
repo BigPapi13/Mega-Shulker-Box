@@ -1,2 +1,2 @@
-execute if score id msb.id matches 382 run setblock ~ ~ ~ minecraft:nether_wart[age=0]
-execute if score id msb.id matches 383 run setblock ~ ~ ~ minecraft:nether_wart[age=1]
+execute if score id msb.id matches 382 run setblock ~ ~ ~ minecraft:daylight_detector[inverted=true]
+execute if score id msb.id matches 383 run setblock ~ ~ ~ minecraft:daylight_detector[inverted=false]

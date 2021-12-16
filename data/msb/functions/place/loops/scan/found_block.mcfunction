@@ -4,7 +4,7 @@
 #The block setup may need to be reorganized to support modularity. This will have to suffice for now
 
 #Summon uninitialized armor stand, used to track and display block
-summon armor_stand ~ ~ ~ {Tags:["msb.shulker","msb.init","msb.nocopy"],Marker:1b,Invisible:1b}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["msb.shulker","msb.init","msb.nocopy"],Marker:1b,Invisible:1b}
 
 #Summon area effect cloud to run the paste function
 summon area_effect_cloud ~ ~ ~ {Tags:["msb.paste"]}

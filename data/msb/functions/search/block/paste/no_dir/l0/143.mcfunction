@@ -1,2 +1,2 @@
-execute if score id msb.id matches 286 run setblock ~ ~ ~ minecraft:cactus[age=8]
-execute if score id msb.id matches 287 run setblock ~ ~ ~ minecraft:cactus[age=9]
+execute if score id msb.id matches 286 run setblock ~ ~ ~ minecraft:glass_pane[waterlogged=true]
+execute if score id msb.id matches 287 run setblock ~ ~ ~ minecraft:glass_pane[waterlogged=false]

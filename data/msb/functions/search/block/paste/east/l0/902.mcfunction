@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2962 run setblock ~ ~ ~ minecraft:white_banner[rotation=4]
-execute if score id msb.id matches 2963 run setblock ~ ~ ~ minecraft:white_banner[rotation=5]
+execute if score id msb.id matches 2862 run setblock ~ ~ ~ minecraft:white_banner[rotation=4]
+execute if score id msb.id matches 2863 run setblock ~ ~ ~ minecraft:white_banner[rotation=5]

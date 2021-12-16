@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4436 run setblock ~ ~ ~ minecraft:crimson_door[facing=south,half=upper,hinge=right,open=true]
-execute if score id msb.id matches 4437 run setblock ~ ~ ~ minecraft:crimson_door[facing=south,half=upper,hinge=right,open=false]
+execute if score id msb.id matches 4336 run setblock ~ ~ ~ minecraft:crimson_door[facing=south,half=upper,hinge=right,open=true]
+execute if score id msb.id matches 4337 run setblock ~ ~ ~ minecraft:crimson_door[facing=south,half=upper,hinge=right,open=false]

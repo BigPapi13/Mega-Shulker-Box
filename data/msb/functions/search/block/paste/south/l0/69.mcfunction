@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1296 run setblock ~ ~ ~ minecraft:gray_bed[facing=west,part=head]
-execute if score id msb.id matches 1297 run setblock ~ ~ ~ minecraft:gray_bed[facing=west,part=foot]
+execute if score id msb.id matches 1196 run setblock ~ ~ ~ minecraft:gray_bed[facing=west,part=head]
+execute if score id msb.id matches 1197 run setblock ~ ~ ~ minecraft:gray_bed[facing=west,part=foot]

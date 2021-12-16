@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4334 run setblock ~ ~ ~ minecraft:warped_trapdoor[facing=north,half=bottom,open=true,waterlogged=true]
-execute if score id msb.id matches 4335 run setblock ~ ~ ~ minecraft:warped_trapdoor[facing=north,half=bottom,open=true,waterlogged=false]
+execute if score id msb.id matches 4234 run setblock ~ ~ ~ minecraft:warped_trapdoor[facing=north,half=bottom,open=true,waterlogged=true]
+execute if score id msb.id matches 4235 run setblock ~ ~ ~ minecraft:warped_trapdoor[facing=north,half=bottom,open=true,waterlogged=false]

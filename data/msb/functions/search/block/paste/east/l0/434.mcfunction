@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2026 run setblock ~ ~ ~ minecraft:acacia_trapdoor[facing=west,half=top,open=true,waterlogged=true]
-execute if score id msb.id matches 2027 run setblock ~ ~ ~ minecraft:acacia_trapdoor[facing=west,half=top,open=true,waterlogged=false]
+execute if score id msb.id matches 1926 run setblock ~ ~ ~ minecraft:acacia_trapdoor[facing=west,half=top,open=true,waterlogged=true]
+execute if score id msb.id matches 1927 run setblock ~ ~ ~ minecraft:acacia_trapdoor[facing=west,half=top,open=true,waterlogged=false]

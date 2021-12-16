@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2436 run setblock ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=east]
-execute if score id msb.id matches 2437 run setblock ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=west]
+execute if score id msb.id matches 2336 run setblock ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=east]
+execute if score id msb.id matches 2337 run setblock ~ ~ ~ minecraft:tripwire_hook[attached=false,facing=west]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1752 run setblock ~ ~ ~ minecraft:birch_wall_sign[facing=north,waterlogged=true]
-execute if score id msb.id matches 1753 run setblock ~ ~ ~ minecraft:birch_wall_sign[facing=north,waterlogged=false]
+execute if score id msb.id matches 1652 run setblock ~ ~ ~ minecraft:birch_wall_sign[facing=north,waterlogged=true]
+execute if score id msb.id matches 1653 run setblock ~ ~ ~ minecraft:birch_wall_sign[facing=north,waterlogged=false]

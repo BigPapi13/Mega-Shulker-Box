@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:player_head[rotation=0] run data modify storage msb:block data.blocks.ids append value 2594
+execute if block ~ ~ ~ minecraft:player_head[rotation=1] run data modify storage msb:block data.blocks.ids append value 2595
+execute if block ~ ~ ~ minecraft:player_head[rotation=2] run data modify storage msb:block data.blocks.ids append value 2596
+execute if block ~ ~ ~ minecraft:player_head[rotation=3] run data modify storage msb:block data.blocks.ids append value 2597
+execute if block ~ ~ ~ minecraft:player_head[rotation=4] run data modify storage msb:block data.blocks.ids append value 2598
+execute if block ~ ~ ~ minecraft:player_head[rotation=5] run data modify storage msb:block data.blocks.ids append value 2599
+execute if block ~ ~ ~ minecraft:player_head[rotation=6] run data modify storage msb:block data.blocks.ids append value 2600
+execute if block ~ ~ ~ minecraft:player_head[rotation=7] run data modify storage msb:block data.blocks.ids append value 2601
+execute if block ~ ~ ~ minecraft:player_head[rotation=8] run data modify storage msb:block data.blocks.ids append value 2602
+execute if block ~ ~ ~ minecraft:player_head[rotation=9] run data modify storage msb:block data.blocks.ids append value 2603
+execute if block ~ ~ ~ minecraft:player_head[rotation=10] run data modify storage msb:block data.blocks.ids append value 2604
+execute if block ~ ~ ~ minecraft:player_head[rotation=11] run data modify storage msb:block data.blocks.ids append value 2605
+execute if block ~ ~ ~ minecraft:player_head[rotation=12] run data modify storage msb:block data.blocks.ids append value 2606
+execute if block ~ ~ ~ minecraft:player_head[rotation=13] run data modify storage msb:block data.blocks.ids append value 2607
+execute if block ~ ~ ~ minecraft:player_head[rotation=14] run data modify storage msb:block data.blocks.ids append value 2608
+execute if block ~ ~ ~ minecraft:player_head[rotation=15] run data modify storage msb:block data.blocks.ids append value 2609

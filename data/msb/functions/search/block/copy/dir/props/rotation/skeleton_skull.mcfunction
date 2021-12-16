@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=0] run data modify storage msb:block data.blocks.ids append value 2534
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=1] run data modify storage msb:block data.blocks.ids append value 2535
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=2] run data modify storage msb:block data.blocks.ids append value 2536
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=3] run data modify storage msb:block data.blocks.ids append value 2537
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=4] run data modify storage msb:block data.blocks.ids append value 2538
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=5] run data modify storage msb:block data.blocks.ids append value 2539
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=6] run data modify storage msb:block data.blocks.ids append value 2540
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=7] run data modify storage msb:block data.blocks.ids append value 2541
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=8] run data modify storage msb:block data.blocks.ids append value 2542
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=9] run data modify storage msb:block data.blocks.ids append value 2543
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=10] run data modify storage msb:block data.blocks.ids append value 2544
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=11] run data modify storage msb:block data.blocks.ids append value 2545
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=12] run data modify storage msb:block data.blocks.ids append value 2546
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=13] run data modify storage msb:block data.blocks.ids append value 2547
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=14] run data modify storage msb:block data.blocks.ids append value 2548
+execute if block ~ ~ ~ minecraft:skeleton_skull[rotation=15] run data modify storage msb:block data.blocks.ids append value 2549

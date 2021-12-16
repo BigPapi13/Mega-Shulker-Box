@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2926 run setblock ~ ~ ~ minecraft:prismarine_brick_stairs[facing=east,half=bottom,waterlogged=false]
-execute if score id msb.id matches 2927 run setblock ~ ~ ~ minecraft:prismarine_brick_stairs[facing=south,half=top,waterlogged=true]
+execute if score id msb.id matches 2826 run setblock ~ ~ ~ minecraft:prismarine_brick_stairs[facing=east,half=bottom,waterlogged=false]
+execute if score id msb.id matches 2827 run setblock ~ ~ ~ minecraft:prismarine_brick_stairs[facing=south,half=top,waterlogged=true]

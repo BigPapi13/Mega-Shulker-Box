@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2004 run setblock ~ ~ ~ minecraft:jungle_trapdoor[facing=east,half=top,open=false,waterlogged=true]
-execute if score id msb.id matches 2005 run setblock ~ ~ ~ minecraft:jungle_trapdoor[facing=east,half=top,open=false,waterlogged=false]
+execute if score id msb.id matches 1904 run setblock ~ ~ ~ minecraft:jungle_trapdoor[facing=east,half=top,open=false,waterlogged=true]
+execute if score id msb.id matches 1905 run setblock ~ ~ ~ minecraft:jungle_trapdoor[facing=east,half=top,open=false,waterlogged=false]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4346 run setblock ~ ~ ~ minecraft:crimson_fence_gate[facing=south,in_wall=true,open=true]
-execute if score id msb.id matches 4347 run setblock ~ ~ ~ minecraft:crimson_fence_gate[facing=south,in_wall=true,open=false]
+execute if score id msb.id matches 4246 run setblock ~ ~ ~ minecraft:crimson_fence_gate[facing=south,in_wall=true,open=true]
+execute if score id msb.id matches 4247 run setblock ~ ~ ~ minecraft:crimson_fence_gate[facing=south,in_wall=true,open=false]

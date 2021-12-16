@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3446 run setblock ~ ~ ~ minecraft:jungle_door[facing=west,half=lower,hinge=left,open=true]
-execute if score id msb.id matches 3447 run setblock ~ ~ ~ minecraft:jungle_door[facing=west,half=lower,hinge=left,open=false]
+execute if score id msb.id matches 3346 run setblock ~ ~ ~ minecraft:jungle_door[facing=west,half=lower,hinge=left,open=true]
+execute if score id msb.id matches 3347 run setblock ~ ~ ~ minecraft:jungle_door[facing=west,half=lower,hinge=left,open=false]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4302 run setblock ~ ~ ~ minecraft:crimson_trapdoor[facing=east,half=bottom,open=true,waterlogged=true]
-execute if score id msb.id matches 4303 run setblock ~ ~ ~ minecraft:crimson_trapdoor[facing=east,half=bottom,open=true,waterlogged=false]
+execute if score id msb.id matches 4202 run setblock ~ ~ ~ minecraft:crimson_trapdoor[facing=east,half=bottom,open=true,waterlogged=true]
+execute if score id msb.id matches 4203 run setblock ~ ~ ~ minecraft:crimson_trapdoor[facing=east,half=bottom,open=true,waterlogged=false]

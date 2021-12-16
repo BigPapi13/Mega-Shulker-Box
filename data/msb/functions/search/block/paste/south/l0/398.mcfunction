@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1954 run setblock ~ ~ ~ minecraft:spruce_trapdoor[facing=east,half=top,open=true,waterlogged=true]
-execute if score id msb.id matches 1955 run setblock ~ ~ ~ minecraft:spruce_trapdoor[facing=east,half=top,open=true,waterlogged=false]
+execute if score id msb.id matches 1854 run setblock ~ ~ ~ minecraft:spruce_trapdoor[facing=east,half=top,open=true,waterlogged=true]
+execute if score id msb.id matches 1855 run setblock ~ ~ ~ minecraft:spruce_trapdoor[facing=east,half=top,open=true,waterlogged=false]

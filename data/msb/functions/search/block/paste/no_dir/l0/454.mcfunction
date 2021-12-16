@@ -1,2 +1,2 @@
-execute if score id msb.id matches 908 run setblock ~ ~ ~ minecraft:smooth_sandstone_slab[type=double,waterlogged=false]
-execute if score id msb.id matches 909 run setblock ~ ~ ~ minecraft:smooth_quartz_slab[type=top,waterlogged=true]
+execute if score id msb.id matches 908 run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=0]
+execute if score id msb.id matches 909 run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=1]

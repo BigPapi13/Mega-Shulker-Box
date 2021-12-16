@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4214 run setblock ~ ~ ~ minecraft:campfire[facing=north,lit=false,signal_fire=true,waterlogged=true]
-execute if score id msb.id matches 4215 run setblock ~ ~ ~ minecraft:campfire[facing=north,lit=false,signal_fire=true,waterlogged=false]
+execute if score id msb.id matches 4114 run setblock ~ ~ ~ minecraft:campfire[facing=north,lit=false,signal_fire=true,waterlogged=true]
+execute if score id msb.id matches 4115 run setblock ~ ~ ~ minecraft:campfire[facing=north,lit=false,signal_fire=true,waterlogged=false]

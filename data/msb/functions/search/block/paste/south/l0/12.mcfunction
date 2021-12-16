@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1182 run setblock ~ ~ ~ minecraft:stripped_jungle_log[axis=x]
-execute if score id msb.id matches 1183 run setblock ~ ~ ~ minecraft:stripped_jungle_log[axis=y]
+execute if score id msb.id matches 1082 run setblock ~ ~ ~ minecraft:stripped_jungle_log[axis=x]
+execute if score id msb.id matches 1083 run setblock ~ ~ ~ minecraft:stripped_jungle_log[axis=y]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 970 run setblock ~ ~ ~ minecraft:scaffolding[bottom=true,distance=0,waterlogged=false]
-execute if score id msb.id matches 971 run setblock ~ ~ ~ minecraft:scaffolding[bottom=true,distance=1,waterlogged=true]
+execute if score id msb.id matches 970 run setblock ~ ~ ~ minecraft:twisting_vines[age=23]
+execute if score id msb.id matches 971 run setblock ~ ~ ~ minecraft:twisting_vines[age=24]

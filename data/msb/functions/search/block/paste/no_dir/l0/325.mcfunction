@@ -1,2 +1,2 @@
-execute if score id msb.id matches 650 run setblock ~ ~ ~ minecraft:nether_brick_slab[type=top,waterlogged=true]
-execute if score id msb.id matches 651 run setblock ~ ~ ~ minecraft:nether_brick_slab[type=top,waterlogged=false]
+execute if score id msb.id matches 650 run setblock ~ ~ ~ minecraft:pink_concrete
+execute if score id msb.id matches 651 run setblock ~ ~ ~ minecraft:gray_concrete

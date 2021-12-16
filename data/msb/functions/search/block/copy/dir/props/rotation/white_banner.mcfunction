@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:white_banner[rotation=0] run data modify storage msb:block data.blocks.ids append value 2854
+execute if block ~ ~ ~ minecraft:white_banner[rotation=1] run data modify storage msb:block data.blocks.ids append value 2855
+execute if block ~ ~ ~ minecraft:white_banner[rotation=2] run data modify storage msb:block data.blocks.ids append value 2856
+execute if block ~ ~ ~ minecraft:white_banner[rotation=3] run data modify storage msb:block data.blocks.ids append value 2857
+execute if block ~ ~ ~ minecraft:white_banner[rotation=4] run data modify storage msb:block data.blocks.ids append value 2858
+execute if block ~ ~ ~ minecraft:white_banner[rotation=5] run data modify storage msb:block data.blocks.ids append value 2859
+execute if block ~ ~ ~ minecraft:white_banner[rotation=6] run data modify storage msb:block data.blocks.ids append value 2860
+execute if block ~ ~ ~ minecraft:white_banner[rotation=7] run data modify storage msb:block data.blocks.ids append value 2861
+execute if block ~ ~ ~ minecraft:white_banner[rotation=8] run data modify storage msb:block data.blocks.ids append value 2862
+execute if block ~ ~ ~ minecraft:white_banner[rotation=9] run data modify storage msb:block data.blocks.ids append value 2863
+execute if block ~ ~ ~ minecraft:white_banner[rotation=10] run data modify storage msb:block data.blocks.ids append value 2864
+execute if block ~ ~ ~ minecraft:white_banner[rotation=11] run data modify storage msb:block data.blocks.ids append value 2865
+execute if block ~ ~ ~ minecraft:white_banner[rotation=12] run data modify storage msb:block data.blocks.ids append value 2866
+execute if block ~ ~ ~ minecraft:white_banner[rotation=13] run data modify storage msb:block data.blocks.ids append value 2867
+execute if block ~ ~ ~ minecraft:white_banner[rotation=14] run data modify storage msb:block data.blocks.ids append value 2868
+execute if block ~ ~ ~ minecraft:white_banner[rotation=15] run data modify storage msb:block data.blocks.ids append value 2869

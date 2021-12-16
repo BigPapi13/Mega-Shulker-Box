@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2030..2031 run function msb:search/block/paste/south/l0/436
-execute if score id msb.id matches 2032..2033 run function msb:search/block/paste/south/l0/437
+execute if score id msb.id matches 1930..1931 run function msb:search/block/paste/south/l0/436
+execute if score id msb.id matches 1932..1933 run function msb:search/block/paste/south/l0/437

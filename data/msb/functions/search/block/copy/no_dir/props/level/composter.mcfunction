@@ -1,9 +1,0 @@
-execute if block ~ ~ ~ minecraft:composter[level=0] run data modify storage msb:block data.blocks.ids append value 1099
-execute if block ~ ~ ~ minecraft:composter[level=1] run data modify storage msb:block data.blocks.ids append value 1100
-execute if block ~ ~ ~ minecraft:composter[level=2] run data modify storage msb:block data.blocks.ids append value 1101
-execute if block ~ ~ ~ minecraft:composter[level=3] run data modify storage msb:block data.blocks.ids append value 1102
-execute if block ~ ~ ~ minecraft:composter[level=4] run data modify storage msb:block data.blocks.ids append value 1103
-execute if block ~ ~ ~ minecraft:composter[level=5] run data modify storage msb:block data.blocks.ids append value 1104
-execute if block ~ ~ ~ minecraft:composter[level=6] run data modify storage msb:block data.blocks.ids append value 1105
-execute if block ~ ~ ~ minecraft:composter[level=7] run data modify storage msb:block data.blocks.ids append value 1106
-execute if block ~ ~ ~ minecraft:composter[level=8] run data modify storage msb:block data.blocks.ids append value 1107

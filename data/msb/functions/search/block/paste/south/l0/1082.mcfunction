@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3322 run setblock ~ ~ ~ minecraft:jungle_fence_gate[facing=north,in_wall=true,open=true]
-execute if score id msb.id matches 3323 run setblock ~ ~ ~ minecraft:jungle_fence_gate[facing=north,in_wall=true,open=false]
+execute if score id msb.id matches 3222 run setblock ~ ~ ~ minecraft:jungle_fence_gate[facing=north,in_wall=true,open=true]
+execute if score id msb.id matches 3223 run setblock ~ ~ ~ minecraft:jungle_fence_gate[facing=north,in_wall=true,open=false]

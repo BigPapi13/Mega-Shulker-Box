@@ -1,2 +1,2 @@
-execute if score id msb.id matches 312 run setblock ~ ~ ~ minecraft:jukebox[has_record=false]
-execute if score id msb.id matches 313 run setblock ~ ~ ~ minecraft:oak_fence[waterlogged=true]
+execute if score id msb.id matches 312 run setblock ~ ~ ~ minecraft:nether_wart[age=2]
+execute if score id msb.id matches 313 run setblock ~ ~ ~ minecraft:nether_wart[age=3]

@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3300 run setblock ~ ~ ~ minecraft:spruce_fence_gate[facing=east,in_wall=false,open=true]
-execute if score id msb.id matches 3301 run setblock ~ ~ ~ minecraft:spruce_fence_gate[facing=east,in_wall=false,open=false]
+execute if score id msb.id matches 3200 run setblock ~ ~ ~ minecraft:spruce_fence_gate[facing=east,in_wall=false,open=true]
+execute if score id msb.id matches 3201 run setblock ~ ~ ~ minecraft:spruce_fence_gate[facing=east,in_wall=false,open=false]

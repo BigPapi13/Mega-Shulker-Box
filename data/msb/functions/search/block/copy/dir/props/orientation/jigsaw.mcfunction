@@ -1,0 +1,12 @@
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_east] run data modify storage msb:block data.blocks.ids append value 4478
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_north] run data modify storage msb:block data.blocks.ids append value 4479
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_south] run data modify storage msb:block data.blocks.ids append value 4480
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=down_west] run data modify storage msb:block data.blocks.ids append value 4481
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_east] run data modify storage msb:block data.blocks.ids append value 4482
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_north] run data modify storage msb:block data.blocks.ids append value 4483
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_south] run data modify storage msb:block data.blocks.ids append value 4484
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=up_west] run data modify storage msb:block data.blocks.ids append value 4485
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=west_up] run data modify storage msb:block data.blocks.ids append value 4486
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=east_up] run data modify storage msb:block data.blocks.ids append value 4487
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=north_up] run data modify storage msb:block data.blocks.ids append value 4488
+execute if block ~ ~ ~ minecraft:jigsaw[orientation=south_up] run data modify storage msb:block data.blocks.ids append value 4489

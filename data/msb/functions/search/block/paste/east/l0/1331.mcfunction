@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3820 run setblock ~ ~ ~ minecraft:dead_tube_coral_wall_fan[facing=east,waterlogged=true]
-execute if score id msb.id matches 3821 run setblock ~ ~ ~ minecraft:dead_tube_coral_wall_fan[facing=east,waterlogged=false]
+execute if score id msb.id matches 3720 run setblock ~ ~ ~ minecraft:dead_tube_coral_wall_fan[facing=east,waterlogged=true]
+execute if score id msb.id matches 3721 run setblock ~ ~ ~ minecraft:dead_tube_coral_wall_fan[facing=east,waterlogged=false]

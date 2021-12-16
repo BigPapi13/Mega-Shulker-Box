@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2438..2565 run function msb:search/block/paste/west/l6/10
-execute if score id msb.id matches 2566..2693 run function msb:search/block/paste/west/l6/11
+execute if score id msb.id matches 2338..2465 run function msb:search/block/paste/west/l6/10
+execute if score id msb.id matches 2466..2593 run function msb:search/block/paste/west/l6/11

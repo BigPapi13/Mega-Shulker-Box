@@ -1,0 +1,10 @@
+execute if block ~ ~ ~ minecraft:rail[shape=north_south] run data modify storage msb:block data.blocks.ids append value 1608
+execute if block ~ ~ ~ minecraft:rail[shape=east_west] run data modify storage msb:block data.blocks.ids append value 1609
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_east] run data modify storage msb:block data.blocks.ids append value 1610
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_west] run data modify storage msb:block data.blocks.ids append value 1611
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_north] run data modify storage msb:block data.blocks.ids append value 1612
+execute if block ~ ~ ~ minecraft:rail[shape=ascending_south] run data modify storage msb:block data.blocks.ids append value 1613
+execute if block ~ ~ ~ minecraft:rail[shape=south_east] run data modify storage msb:block data.blocks.ids append value 1614
+execute if block ~ ~ ~ minecraft:rail[shape=south_west] run data modify storage msb:block data.blocks.ids append value 1615
+execute if block ~ ~ ~ minecraft:rail[shape=north_west] run data modify storage msb:block data.blocks.ids append value 1616
+execute if block ~ ~ ~ minecraft:rail[shape=north_east] run data modify storage msb:block data.blocks.ids append value 1617

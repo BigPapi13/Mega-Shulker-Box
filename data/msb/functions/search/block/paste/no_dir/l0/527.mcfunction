@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1054 run setblock ~ ~ ~ minecraft:twisting_vines[age=7]
-execute if score id msb.id matches 1055 run setblock ~ ~ ~ minecraft:twisting_vines[age=8]
+execute if score id msb.id matches 1054 run setblock ~ ~ ~ minecraft:polished_blackstone_wall[waterlogged=false]
+execute if score id msb.id matches 1055 run setblock ~ ~ ~ minecraft:chiseled_nether_bricks

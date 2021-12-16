@@ -13,6 +13,9 @@
 tag @s remove msb.break
 scoreboard players operation @s msb.rotation = temp msb.rotation
 
+#Store rotation in shulker's data so it can be referenced when the shulker is placed back down (this helps to cut down on commands)
+execute store result storage msb:block data.prev_rotation byte 1 run scoreboard players get temp msb.rotation
+
 function msb:calc/set_dimensions/main
 
 scoreboard players operation shift_x msb.vol = x msb.vol

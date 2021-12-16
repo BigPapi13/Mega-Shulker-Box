@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1632 run setblock ~ ~ ~ minecraft:jungle_sign[rotation=14,waterlogged=true]
-execute if score id msb.id matches 1633 run setblock ~ ~ ~ minecraft:jungle_sign[rotation=14,waterlogged=false]
+execute if score id msb.id matches 1532 run setblock ~ ~ ~ minecraft:jungle_sign[rotation=14,waterlogged=true]
+execute if score id msb.id matches 1533 run setblock ~ ~ ~ minecraft:jungle_sign[rotation=14,waterlogged=false]

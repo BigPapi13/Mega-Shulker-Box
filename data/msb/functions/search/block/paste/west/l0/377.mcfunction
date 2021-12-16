@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1912 run setblock ~ ~ ~ minecraft:oak_trapdoor[facing=west,half=bottom,open=false,waterlogged=true]
-execute if score id msb.id matches 1913 run setblock ~ ~ ~ minecraft:oak_trapdoor[facing=west,half=bottom,open=false,waterlogged=false]
+execute if score id msb.id matches 1812 run setblock ~ ~ ~ minecraft:oak_trapdoor[facing=west,half=bottom,open=false,waterlogged=true]
+execute if score id msb.id matches 1813 run setblock ~ ~ ~ minecraft:oak_trapdoor[facing=west,half=bottom,open=false,waterlogged=false]

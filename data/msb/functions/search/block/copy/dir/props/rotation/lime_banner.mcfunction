@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=0] run data modify storage msb:block data.blocks.ids append value 2934
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=1] run data modify storage msb:block data.blocks.ids append value 2935
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=2] run data modify storage msb:block data.blocks.ids append value 2936
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=3] run data modify storage msb:block data.blocks.ids append value 2937
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=4] run data modify storage msb:block data.blocks.ids append value 2938
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=5] run data modify storage msb:block data.blocks.ids append value 2939
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=6] run data modify storage msb:block data.blocks.ids append value 2940
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=7] run data modify storage msb:block data.blocks.ids append value 2941
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=8] run data modify storage msb:block data.blocks.ids append value 2942
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=9] run data modify storage msb:block data.blocks.ids append value 2943
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=10] run data modify storage msb:block data.blocks.ids append value 2944
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=11] run data modify storage msb:block data.blocks.ids append value 2945
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=12] run data modify storage msb:block data.blocks.ids append value 2946
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=13] run data modify storage msb:block data.blocks.ids append value 2947
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=14] run data modify storage msb:block data.blocks.ids append value 2948
+execute if block ~ ~ ~ minecraft:lime_banner[rotation=15] run data modify storage msb:block data.blocks.ids append value 2949

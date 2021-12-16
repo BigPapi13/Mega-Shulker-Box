@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4182 run setblock ~ ~ ~ minecraft:bell[attachment=ceiling,facing=east]
-execute if score id msb.id matches 4183 run setblock ~ ~ ~ minecraft:bell[attachment=ceiling,facing=west]
+execute if score id msb.id matches 4082 run setblock ~ ~ ~ minecraft:bell[attachment=ceiling,facing=east]
+execute if score id msb.id matches 4083 run setblock ~ ~ ~ minecraft:bell[attachment=ceiling,facing=west]

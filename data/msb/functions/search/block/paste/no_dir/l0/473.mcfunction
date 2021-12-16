@@ -1,2 +1,2 @@
-execute if score id msb.id matches 946 run setblock ~ ~ ~ minecraft:brick_wall[waterlogged=false]
-execute if score id msb.id matches 947 run setblock ~ ~ ~ minecraft:prismarine_wall[waterlogged=true]
+execute if score id msb.id matches 946 run setblock ~ ~ ~ minecraft:weeping_vines_plant
+execute if score id msb.id matches 947 run setblock ~ ~ ~ minecraft:twisting_vines[age=0]

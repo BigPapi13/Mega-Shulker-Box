@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1722 run setblock ~ ~ ~ minecraft:cobblestone_stairs[facing=south,half=top,waterlogged=true]
-execute if score id msb.id matches 1723 run setblock ~ ~ ~ minecraft:cobblestone_stairs[facing=south,half=top,waterlogged=false]
+execute if score id msb.id matches 1622 run setblock ~ ~ ~ minecraft:cobblestone_stairs[facing=south,half=top,waterlogged=true]
+execute if score id msb.id matches 1623 run setblock ~ ~ ~ minecraft:cobblestone_stairs[facing=south,half=top,waterlogged=false]

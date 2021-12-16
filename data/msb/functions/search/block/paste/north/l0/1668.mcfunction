@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4494 run setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=true]
-execute if score id msb.id matches 4495 run setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=false]
+execute if score id msb.id matches 4394 run setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=true]
+execute if score id msb.id matches 4395 run setblock ~ ~ ~ minecraft:warped_door[facing=west,half=lower,hinge=left,open=false]

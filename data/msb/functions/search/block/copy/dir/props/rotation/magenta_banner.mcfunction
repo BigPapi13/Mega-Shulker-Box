@@ -1,0 +1,16 @@
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=0] run data modify storage msb:block data.blocks.ids append value 2886
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=1] run data modify storage msb:block data.blocks.ids append value 2887
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=2] run data modify storage msb:block data.blocks.ids append value 2888
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=3] run data modify storage msb:block data.blocks.ids append value 2889
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=4] run data modify storage msb:block data.blocks.ids append value 2890
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=5] run data modify storage msb:block data.blocks.ids append value 2891
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=6] run data modify storage msb:block data.blocks.ids append value 2892
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=7] run data modify storage msb:block data.blocks.ids append value 2893
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=8] run data modify storage msb:block data.blocks.ids append value 2894
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=9] run data modify storage msb:block data.blocks.ids append value 2895
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=10] run data modify storage msb:block data.blocks.ids append value 2896
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=11] run data modify storage msb:block data.blocks.ids append value 2897
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=12] run data modify storage msb:block data.blocks.ids append value 2898
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=13] run data modify storage msb:block data.blocks.ids append value 2899
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=14] run data modify storage msb:block data.blocks.ids append value 2900
+execute if block ~ ~ ~ minecraft:magenta_banner[rotation=15] run data modify storage msb:block data.blocks.ids append value 2901

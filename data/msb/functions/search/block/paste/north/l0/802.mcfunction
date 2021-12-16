@@ -1,2 +1,2 @@
-execute if score id msb.id matches 2762 run setblock ~ ~ ~ minecraft:damaged_anvil[facing=south]
-execute if score id msb.id matches 2763 run setblock ~ ~ ~ minecraft:damaged_anvil[facing=north]
+execute if score id msb.id matches 2662 run setblock ~ ~ ~ minecraft:damaged_anvil[facing=south]
+execute if score id msb.id matches 2663 run setblock ~ ~ ~ minecraft:damaged_anvil[facing=north]

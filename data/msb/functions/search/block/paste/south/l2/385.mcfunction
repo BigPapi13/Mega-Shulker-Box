@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4238..4241 run function msb:search/block/paste/south/l1/770
-execute if score id msb.id matches 4242..4245 run function msb:search/block/paste/south/l1/771
+execute if score id msb.id matches 4138..4141 run function msb:search/block/paste/south/l1/770
+execute if score id msb.id matches 4142..4145 run function msb:search/block/paste/south/l1/771

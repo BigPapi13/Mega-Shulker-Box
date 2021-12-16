@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4048 run setblock ~ ~ ~ minecraft:granite_stairs[facing=west,half=bottom,waterlogged=true]
-execute if score id msb.id matches 4049 run setblock ~ ~ ~ minecraft:granite_stairs[facing=west,half=bottom,waterlogged=false]
+execute if score id msb.id matches 3948 run setblock ~ ~ ~ minecraft:granite_stairs[facing=west,half=bottom,waterlogged=true]
+execute if score id msb.id matches 3949 run setblock ~ ~ ~ minecraft:granite_stairs[facing=west,half=bottom,waterlogged=false]

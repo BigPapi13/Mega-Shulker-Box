@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4362 run setblock ~ ~ ~ minecraft:warped_fence_gate[facing=north,in_wall=true,open=true]
-execute if score id msb.id matches 4363 run setblock ~ ~ ~ minecraft:warped_fence_gate[facing=north,in_wall=true,open=false]
+execute if score id msb.id matches 4262 run setblock ~ ~ ~ minecraft:warped_fence_gate[facing=north,in_wall=true,open=true]
+execute if score id msb.id matches 4263 run setblock ~ ~ ~ minecraft:warped_fence_gate[facing=north,in_wall=true,open=false]

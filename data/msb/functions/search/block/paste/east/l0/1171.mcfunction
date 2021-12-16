@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3500 run setblock ~ ~ ~ minecraft:dark_oak_door[facing=west,half=upper,hinge=right,open=true]
-execute if score id msb.id matches 3501 run setblock ~ ~ ~ minecraft:dark_oak_door[facing=west,half=upper,hinge=right,open=false]
+execute if score id msb.id matches 3400 run setblock ~ ~ ~ minecraft:dark_oak_door[facing=west,half=upper,hinge=right,open=true]
+execute if score id msb.id matches 3401 run setblock ~ ~ ~ minecraft:dark_oak_door[facing=west,half=upper,hinge=right,open=false]

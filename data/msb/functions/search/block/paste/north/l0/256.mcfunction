@@ -1,2 +1,2 @@
-execute if score id msb.id matches 1670 run setblock ~ ~ ~ minecraft:oak_door[facing=south,half=upper,hinge=right,open=true]
-execute if score id msb.id matches 1671 run setblock ~ ~ ~ minecraft:oak_door[facing=south,half=upper,hinge=right,open=false]
+execute if score id msb.id matches 1570 run setblock ~ ~ ~ minecraft:oak_door[facing=south,half=upper,hinge=right,open=true]
+execute if score id msb.id matches 1571 run setblock ~ ~ ~ minecraft:oak_door[facing=south,half=upper,hinge=right,open=false]

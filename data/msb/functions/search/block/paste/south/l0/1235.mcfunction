@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3628 run setblock ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=west]
-execute if score id msb.id matches 3629 run setblock ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=up]
+execute if score id msb.id matches 3528 run setblock ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=west]
+execute if score id msb.id matches 3529 run setblock ~ ~ ~ minecraft:repeating_command_block[conditional=false,facing=up]

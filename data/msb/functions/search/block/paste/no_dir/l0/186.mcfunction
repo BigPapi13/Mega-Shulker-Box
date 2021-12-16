@@ -1,2 +1,2 @@
-execute if score id msb.id matches 372 run setblock ~ ~ ~ minecraft:melon_stem[age=3]
-execute if score id msb.id matches 373 run setblock ~ ~ ~ minecraft:melon_stem[age=4]
+execute if score id msb.id matches 372 run setblock ~ ~ ~ minecraft:potatoes[age=0]
+execute if score id msb.id matches 373 run setblock ~ ~ ~ minecraft:potatoes[age=1]

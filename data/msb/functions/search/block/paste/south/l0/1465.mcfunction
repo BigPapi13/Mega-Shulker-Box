@@ -1,2 +1,2 @@
-execute if score id msb.id matches 4088 run setblock ~ ~ ~ minecraft:red_nether_brick_stairs[facing=east,half=bottom,waterlogged=true]
-execute if score id msb.id matches 4089 run setblock ~ ~ ~ minecraft:red_nether_brick_stairs[facing=east,half=bottom,waterlogged=false]
+execute if score id msb.id matches 3988 run setblock ~ ~ ~ minecraft:red_nether_brick_stairs[facing=east,half=bottom,waterlogged=true]
+execute if score id msb.id matches 3989 run setblock ~ ~ ~ minecraft:red_nether_brick_stairs[facing=east,half=bottom,waterlogged=false]

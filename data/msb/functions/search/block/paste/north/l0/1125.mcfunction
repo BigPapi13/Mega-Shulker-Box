@@ -1,2 +1,2 @@
-execute if score id msb.id matches 3408 run setblock ~ ~ ~ minecraft:birch_door[facing=south,half=lower,hinge=right,open=true]
-execute if score id msb.id matches 3409 run setblock ~ ~ ~ minecraft:birch_door[facing=south,half=lower,hinge=right,open=false]
+execute if score id msb.id matches 3308 run setblock ~ ~ ~ minecraft:birch_door[facing=south,half=lower,hinge=right,open=true]
+execute if score id msb.id matches 3309 run setblock ~ ~ ~ minecraft:birch_door[facing=south,half=lower,hinge=right,open=false]
